@@ -1,0 +1,25 @@
+{
+  "name": "friedfriends",
+  "version": "1.0.0",
+  "description": "friendster type app using express server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fugitivepigments/friedFriends.git"
+  },
+  "author": "AR Mancuso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fugitivepigments/friedFriends/issues"
+  },
+  "homepage": "https://github.com/fugitivepigments/friedFriends#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
