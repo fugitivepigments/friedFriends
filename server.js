@@ -13,5 +13,13 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// New Friends (data)
+var allFriends = [];
+
+var apiRoutes = require("./routing/apiRoutes.js")(app);
+var htmlRoutes = require("./routing/htmlRoutes.js")(app);
+
+// Start server listener
 // =============================================================
+app.listen(PORT, function() {
+  console.log("Listening in on PORT " + PORT);
+});
