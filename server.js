@@ -1,8 +1,8 @@
 // Dependencies
 // =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
 
 // Sets up the Express App
 // =============================================================
@@ -15,11 +15,11 @@ app.use(bodyParser.json());
 
 var allFriends = [];
 
-var apiRoutes = require("./routing/apiRoutes.js")(app);
-var htmlRoutes = require("./routing/htmlRoutes.js")(app);
+var apiRoutes = require('./routing/apiRoutes.js')(app);
+var htmlRoutes = require('./routing/htmlRoutes.js')(app);
 
 // Start server listener
 // =============================================================
 app.listen(PORT, function() {
-  console.log("Listening in on PORT " + PORT);
+  console.log('Listening in on PORT ' + PORT);
 });
