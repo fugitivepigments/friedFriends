@@ -1,7 +1,7 @@
 var friendsArray = [
   {
   name: 'Rusty',
-  photo: 'link'
+  photo: 'link',
   scores: [
     "5",
     "1",

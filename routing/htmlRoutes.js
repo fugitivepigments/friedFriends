@@ -8,6 +8,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "/../public/home.html"));
   });
   // Displays survey page
+  app.get("/friends", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../app/data/friends.js"));
+  });
   app.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/survey.html"));
   });
