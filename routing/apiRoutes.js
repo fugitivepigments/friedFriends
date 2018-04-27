@@ -3,17 +3,21 @@
 var friendData = require('../app/data/friends.js');
 var path = require('path');
 var body = require('body-parser');
+var express = require('express');
 
-module.exports = function(app) {
+module.exports = function() {
+  var router = express.Router();
   //get request to display json of all possible friends
-  app.get("/api/friends", function(req, res) {
+  router.get('/api/friends', function(req, res) {
     res.json(friendData);
   });
 
   //Creates newFriend objects
-  app.post("/api/friends", function(req, res) {
+  router.post('/api/friends', function(req, res) {
     console.log(req.body);
     friendData.push(req.body);
-    res.json(true);
+    return res.json(true);
   });
-}
+
+  return router;
+};
