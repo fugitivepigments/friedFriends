@@ -1,6 +1,6 @@
 // API Routes
 // =============================================================
-var friendData = require('../app/data/friends.js');
+var friendData = require('../app/data/friends');
 var path = require('path');
 var body = require('body-parser');
 var express = require('express');

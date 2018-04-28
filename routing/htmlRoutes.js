@@ -11,7 +11,7 @@ module.exports = function() {
   });
   // Displays survey page
   router.get("/friends", function(req, res) {
-    res.sendFile(path.join(__dirname, "/../app/data/friends.js"));
+    res.sendFile(path.join(__dirname, "/../app/data/friends.json"));
   });
   router.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/survey.html"));
