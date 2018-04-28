@@ -17,6 +17,13 @@ module.exports = function() {
     console.log(req.body);
     friendData.push(req.body);
     return res.json(true);
+    //logic for comparing arrays, returning % match
+    // for (var i = 0; i < friendsArray.length; i++) {
+    //   var percentEqual = 0;
+    //   if (friendsArray[i].scores == req.body) {
+    //     return
+    //   }
+    // }
   });
 
   return router;
